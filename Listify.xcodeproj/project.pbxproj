@@ -15,6 +15,10 @@
 		A52B832725DE90B200078B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B832525DE90B200078B2F /* LaunchScreen.storyboard */; };
 		A52B833225DE90B200078B2F /* ListifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B833125DE90B200078B2F /* ListifyTests.swift */; };
 		A52B833D25DE90B200078B2F /* ListifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B833C25DE90B200078B2F /* ListifyUITests.swift */; };
+		A5DD2B8B25F3A6FE0078F916 /* ListifyItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2B8925F3A6FE0078F916 /* ListifyItemTableViewCell.swift */; };
+		A5DD2B8C25F3A6FE0078F916 /* ListifyItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DD2B8A25F3A6FE0078F916 /* ListifyItemTableViewCell.xib */; };
+		A5DD2B9625F3AA460078F916 /* ListifyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2B9525F3AA460078F916 /* ListifyItem.swift */; };
+		A5DD2BA125F3AC990078F916 /* ListifyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2BA025F3AC990078F916 /* ListifyHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		A52B833825DE90B200078B2F /* ListifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52B833C25DE90B200078B2F /* ListifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyUITests.swift; sourceTree = "<group>"; };
 		A52B833E25DE90B300078B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5DD2B8925F3A6FE0078F916 /* ListifyItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyItemTableViewCell.swift; sourceTree = "<group>"; };
+		A5DD2B8A25F3A6FE0078F916 /* ListifyItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListifyItemTableViewCell.xib; sourceTree = "<group>"; };
+		A5DD2B9525F3AA460078F916 /* ListifyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyItem.swift; sourceTree = "<group>"; };
+		A5DD2BA025F3AC990078F916 /* ListifyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,11 @@
 		A52B831925DE90B000078B2F /* Listify */ = {
 			isa = PBXGroup;
 			children = (
+				A5DD2B7F25F3A6970078F916 /* customViews */,
 				A5DD2B3725EFBA560078F916 /* Screen */,
 				A52B831A25DE90B000078B2F /* AppDelegate.swift */,
-				A52B831C25DE90B000078B2F /* SceneDelegate.swift */,
 				A52B831E25DE90B000078B2F /* ViewController.swift */,
+				A52B831C25DE90B000078B2F /* SceneDelegate.swift */,
 				A52B832325DE90B200078B2F /* Assets.xcassets */,
 				A52B832825DE90B200078B2F /* Info.plist */,
 			);
@@ -132,8 +141,35 @@
 			children = (
 				A52B832025DE90B000078B2F /* Main.storyboard */,
 				A52B832525DE90B200078B2F /* LaunchScreen.storyboard */,
+				A5DD2BA025F3AC990078F916 /* ListifyHomeViewController.swift */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		A5DD2B7F25F3A6970078F916 /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5DD2B9425F3AA350078F916 /* Model */,
+				A5DD2B8025F3A6A20078F916 /* cells */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
+		A5DD2B8025F3A6A20078F916 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				A5DD2B8925F3A6FE0078F916 /* ListifyItemTableViewCell.swift */,
+				A5DD2B8A25F3A6FE0078F916 /* ListifyItemTableViewCell.xib */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		A5DD2B9425F3AA350078F916 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5DD2B9525F3AA460078F916 /* ListifyItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +278,7 @@
 				A52B832725DE90B200078B2F /* LaunchScreen.storyboard in Resources */,
 				A52B832425DE90B200078B2F /* Assets.xcassets in Resources */,
 				A52B832225DE90B000078B2F /* Main.storyboard in Resources */,
+				A5DD2B8C25F3A6FE0078F916 /* ListifyItemTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +306,9 @@
 				A52B831F25DE90B000078B2F /* ViewController.swift in Sources */,
 				A52B831B25DE90B000078B2F /* AppDelegate.swift in Sources */,
 				A52B831D25DE90B000078B2F /* SceneDelegate.swift in Sources */,
+				A5DD2B9625F3AA460078F916 /* ListifyItem.swift in Sources */,
+				A5DD2BA125F3AC990078F916 /* ListifyHomeViewController.swift in Sources */,
+				A5DD2B8B25F3A6FE0078F916 /* ListifyItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

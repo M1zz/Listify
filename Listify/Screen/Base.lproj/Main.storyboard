@@ -92,17 +92,32 @@
             </objects>
             <point key="canvasLocation" x="-375.36231884057975" y="1142.4107142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Listify Home View Controller-->
         <scene sceneID="ajU-Li-Inb">
             <objects>
-                <viewController id="qkU-eM-cIR" sceneMemberID="viewController">
+                <viewController id="qkU-eM-cIR" customClass="ListifyHomeViewController" customModule="Listify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zae-og-wWd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tFN-BB-2al">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hUa-t6-LNa"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="tFN-BB-2al" firstAttribute="leading" secondItem="hUa-t6-LNa" secondAttribute="leading" id="02e-f5-8gL"/>
+                            <constraint firstItem="hUa-t6-LNa" firstAttribute="trailing" secondItem="tFN-BB-2al" secondAttribute="trailing" id="D11-WC-23B"/>
+                            <constraint firstItem="hUa-t6-LNa" firstAttribute="bottom" secondItem="tFN-BB-2al" secondAttribute="bottom" id="HZe-9i-Bli"/>
+                            <constraint firstItem="tFN-BB-2al" firstAttribute="top" secondItem="hUa-t6-LNa" secondAttribute="top" id="K2O-mn-dWZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="home_deselected" id="ckf-w1-Zwm"/>
+                    <connections>
+                        <outlet property="tableView" destination="tFN-BB-2al" id="Xof-6B-nS8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zly-BA-rwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,6 +166,9 @@
         <image name="home_deselected" width="24" height="24"/>
         <image name="plus" width="48" height="48"/>
         <image name="search_deselected" width="25" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
