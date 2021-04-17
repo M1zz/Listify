@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="5GG-ei-VCm">
-                                <rect key="frame" x="146" y="429" width="122" height="48"/>
+                                <rect key="frame" x="107" y="413.5" width="200" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5GG-ei-VCm" secondAttribute="height" multiplier="81:32" id="5MH-dE-8TK"/>
+                                    <constraint firstAttribute="width" constant="200" id="V4u-WR-gAb"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5GG-ei-VCm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3ma-g5-Y5p"/>
                             <constraint firstItem="5GG-ei-VCm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FHx-zW-VG7"/>
@@ -35,9 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="122" height="48"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo" width="81" height="32"/>
     </resources>
 </document>

@@ -11,6 +11,7 @@ class ListifyItemTableViewCell: UITableViewCell {
 
     let cellIdentifier: String = "ListifyItemTableViewCell"
     
+    @IBOutlet weak var rankingLabel: UILabel!
     @IBOutlet weak var listImageView: UIImageView!
     @IBOutlet weak var listTitleLabel: UILabel!
     @IBOutlet weak var listAuthorLabel: UILabel!
@@ -20,12 +21,15 @@ class ListifyItemTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .systemBackground
+        listTitleLabel?.textColor = .label
     }
 
     
-    func set(item: ListifyItem?) {
-        listImageView.image = UIImage(named: "dummy1")
-        listTitleLabel.text = "감성이 넘쳐나는 리스트"
-        listAuthorLabel.text = "Leeo"
+    func set(item: ListifyItem?, index: Int) {
+        rankingLabel.text = String(index + 1)
+        listImageView.image = UIImage(named: item?.imageUrl ?? "")
+        listTitleLabel.text = item?.title
+        listAuthorLabel.text = item?.author
     }
 }

@@ -15,6 +15,7 @@
 		A52B832725DE90B200078B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B832525DE90B200078B2F /* LaunchScreen.storyboard */; };
 		A52B833225DE90B200078B2F /* ListifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B833125DE90B200078B2F /* ListifyTests.swift */; };
 		A52B833D25DE90B200078B2F /* ListifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52B833C25DE90B200078B2F /* ListifyUITests.swift */; };
+		A59E615C26135B1F001AE205 /* AddPlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59E615B26135B1F001AE205 /* AddPlayListViewController.swift */; };
 		A5DD2B8B25F3A6FE0078F916 /* ListifyItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2B8925F3A6FE0078F916 /* ListifyItemTableViewCell.swift */; };
 		A5DD2B8C25F3A6FE0078F916 /* ListifyItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5DD2B8A25F3A6FE0078F916 /* ListifyItemTableViewCell.xib */; };
 		A5DD2B9625F3AA460078F916 /* ListifyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DD2B9525F3AA460078F916 /* ListifyItem.swift */; };
@@ -53,6 +54,7 @@
 		A52B833825DE90B200078B2F /* ListifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52B833C25DE90B200078B2F /* ListifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyUITests.swift; sourceTree = "<group>"; };
 		A52B833E25DE90B300078B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59E615B26135B1F001AE205 /* AddPlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayListViewController.swift; sourceTree = "<group>"; };
 		A5DD2B8925F3A6FE0078F916 /* ListifyItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyItemTableViewCell.swift; sourceTree = "<group>"; };
 		A5DD2B8A25F3A6FE0078F916 /* ListifyItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListifyItemTableViewCell.xib; sourceTree = "<group>"; };
 		A5DD2B9525F3AA460078F916 /* ListifyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListifyItem.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				A52B832025DE90B000078B2F /* Main.storyboard */,
 				A52B832525DE90B200078B2F /* LaunchScreen.storyboard */,
 				A5DD2BA025F3AC990078F916 /* ListifyHomeViewController.swift */,
+				A59E615B26135B1F001AE205 /* AddPlayListViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59E615C26135B1F001AE205 /* AddPlayListViewController.swift in Sources */,
 				A52B831F25DE90B000078B2F /* ViewController.swift in Sources */,
 				A52B831B25DE90B000078B2F /* AppDelegate.swift in Sources */,
 				A52B831D25DE90B000078B2F /* SceneDelegate.swift in Sources */,
